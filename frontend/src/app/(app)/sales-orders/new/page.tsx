@@ -1,3 +1,8 @@
-export default function NewSalesOrderPage() {
-  return <h1 className="text-xl font-semibold">New Sales Order</h1>;
+import type { Metadata } from "next";
+import { OrderForm } from "@/features/orders/order-form";
+
+export const metadata: Metadata = { title: "New sales order" };
+
+export default function Page() {
+  return <OrderForm kind="sales" />;
 }

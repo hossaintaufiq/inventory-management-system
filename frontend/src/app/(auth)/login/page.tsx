@@ -1,3 +1,8 @@
-export default function LoginPage() {
-  return <h1 className="text-xl font-semibold">Login</h1>;
+import type { Metadata } from "next";
+import { LoginForm } from "@/features/auth/auth-forms";
+
+export const metadata: Metadata = { title: "Sign in" };
+
+export default function Page() {
+  return <LoginForm />;
 }

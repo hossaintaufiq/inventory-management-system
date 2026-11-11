@@ -1,3 +1,8 @@
-export default function ReportsPage() {
-  return <h1 className="text-xl font-semibold">Reports</h1>;
+import type { Metadata } from "next";
+import { ReportsView } from "@/features/reports/reports-view";
+
+export const metadata: Metadata = { title: "Reports" };
+
+export default function Page() {
+  return <ReportsView />;
 }

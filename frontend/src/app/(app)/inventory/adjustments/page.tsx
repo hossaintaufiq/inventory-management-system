@@ -1,3 +1,8 @@
-export default function StockAdjustmentsPage() {
-  return <h1 className="text-xl font-semibold">Stock Adjustments</h1>;
+import type { Metadata } from "next";
+import { AdjustmentList } from "@/features/inventory/adjustment-list";
+
+export const metadata: Metadata = { title: "Stock adjustments" };
+
+export default function Page() {
+  return <AdjustmentList />;
 }

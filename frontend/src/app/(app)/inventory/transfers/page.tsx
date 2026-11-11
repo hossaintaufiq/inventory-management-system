@@ -1,3 +1,8 @@
-export default function StockTransfersPage() {
-  return <h1 className="text-xl font-semibold">Stock Transfers</h1>;
+import type { Metadata } from "next";
+import { TransferList } from "@/features/inventory/transfer-list";
+
+export const metadata: Metadata = { title: "Stock transfers" };
+
+export default function Page() {
+  return <TransferList />;
 }

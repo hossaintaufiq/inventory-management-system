@@ -1,3 +1,8 @@
+import type { Metadata } from "next";
+import { ProductForm } from "@/features/products/product-form";
+
+export const metadata: Metadata = { title: "Add product" };
+
 export default function NewProductPage() {
-  return <h1 className="text-xl font-semibold">New Product</h1>;
+  return <ProductForm />;
 }

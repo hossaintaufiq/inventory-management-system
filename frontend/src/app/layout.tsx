@@ -15,7 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: { default: "Stockly", template: "%s · Stockly" },
-  description: "Inventory management for vendors of every size.",
+  description: "Inventory management for vendors of every size. A product by Softlligence Technologies.",
+  applicationName: "Stockly",
+  authors: [{ name: "Softlligence Technologies" }],
+  creator: "Softlligence Technologies",
+  publisher: "Softlligence Technologies",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

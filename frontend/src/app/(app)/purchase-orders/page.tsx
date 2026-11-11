@@ -1,3 +1,8 @@
-export default function PurchaseOrdersPage() {
-  return <h1 className="text-xl font-semibold">Purchase Orders</h1>;
+import type { Metadata } from "next";
+import { OrderList } from "@/features/orders/order-list";
+
+export const metadata: Metadata = { title: "Purchase orders" };
+
+export default function Page() {
+  return <OrderList kind="purchase" />;
 }

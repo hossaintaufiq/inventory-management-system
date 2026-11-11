@@ -1,3 +1,8 @@
-export default function ForgotPasswordPage() {
-  return <h1 className="text-xl font-semibold">Forgot Password</h1>;
+import type { Metadata } from "next";
+import { ForgotPasswordForm } from "@/features/auth/auth-forms";
+
+export const metadata: Metadata = { title: "Reset password" };
+
+export default function Page() {
+  return <ForgotPasswordForm />;
 }

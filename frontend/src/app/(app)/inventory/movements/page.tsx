@@ -1,3 +1,8 @@
-export default function StockMovementsPage() {
-  return <h1 className="text-xl font-semibold">Stock Movements</h1>;
+import type { Metadata } from "next";
+import { MovementList } from "@/features/inventory/movement-list";
+
+export const metadata: Metadata = { title: "Movement history" };
+
+export default function Page() {
+  return <MovementList />;
 }

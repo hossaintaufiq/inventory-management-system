@@ -1,3 +1,8 @@
-export default function TeamandRolesPage() {
-  return <h1 className="text-xl font-semibold">Team and Roles</h1>;
+import type { Metadata } from "next";
+import { TeamSettings } from "@/features/settings/team-settings";
+
+export const metadata: Metadata = { title: "Team" };
+
+export default function Page() {
+  return <TeamSettings />;
 }

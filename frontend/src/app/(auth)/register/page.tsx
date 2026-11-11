@@ -1,3 +1,8 @@
-export default function RegisterPage() {
-  return <h1 className="text-xl font-semibold">Register</h1>;
+import type { Metadata } from "next";
+import { RegisterForm } from "@/features/auth/auth-forms";
+
+export const metadata: Metadata = { title: "Create account" };
+
+export default function Page() {
+  return <RegisterForm />;
 }

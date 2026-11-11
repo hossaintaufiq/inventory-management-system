@@ -1,3 +1,8 @@
-export default function WarehousesPage() {
-  return <h1 className="text-xl font-semibold">Warehouses</h1>;
+import type { Metadata } from "next";
+import { WarehouseList } from "@/features/warehouses/warehouse-list";
+
+export const metadata: Metadata = { title: "Warehouses" };
+
+export default function Page() {
+  return <WarehouseList />;
 }
